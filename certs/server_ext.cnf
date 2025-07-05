@@ -1,0 +1,10 @@
+[ v3_ext ]             # <--- Nueva sección principal para las extensiones
+subjectAltName = @alt_names # <--- Aquí le dices a OpenSSL que busque los SANs en la sección 'alt_names'
+
+[ alt_names ]          # <--- Renombramos la sección a 'alt_names'
+DNS.1 = MyVPN_Server
+DNS.2 = localhost
+IP.1 = 127.0.0.1
+# Puedes agregar otros si tu servidor VPN tendrá un nombre de dominio o una IP pública
+# DNS.3 = vpn.example.com
+# IP.2 = 203.0.113.45
